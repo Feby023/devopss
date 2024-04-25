@@ -16,11 +16,10 @@ public class LoginController {
  
     @Autowired
     private LoginService service;
- 
+
     @GetMapping("/")
     public String api()
     {
- 
         return "login";
     }
  
@@ -37,8 +36,8 @@ public class LoginController {
         }
     }
  
-    @GetMapping("/display")
+    @GetMapping("/disp")
     public String display() {
-        return "display";
+        return "disp";
     }
 }

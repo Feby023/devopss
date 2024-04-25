@@ -10,4 +10,6 @@ import com.example.demoshaun.domain.Login1;
 public interface LoginRepo extends JpaRepository<Login1, String>
 {
     Login1 findByUsernameAndPassword(String username, String password);
+    @SuppressWarnings("unchecked")
+    Login1 save(Login1 user);
 }
